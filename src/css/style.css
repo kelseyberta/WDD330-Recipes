@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+:root {
+    --font-body: "caveat";
+    --font-header: "lora";
+    --primary-color: #f36a71;
+    --second-color:#1a6c85;
+    --accent-color:#1c1f28;
+}
+* {
+    box-sizing: border-box;
+  }
+
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+.logo {
+    display: flex;
+    justify-content: left;
+    width: 300px;
+}
+.profile {
+    display: flex;
+    justify-content: right;
+    
+}
+.profile a{
+    display:flex;
+    justify-content: right;
+}
+#dynamic-header{
+    background-color: white;
+}
+main {
+    background-color: var(--primary-color);
+}
