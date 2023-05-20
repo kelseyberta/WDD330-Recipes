@@ -9,8 +9,15 @@
 * {
     box-sizing: border-box;
   }
+
 main {
     background-color: white;
+}
+.recipe-details_add{
+    position:relative;
+    top: 50%;
+    left: 45%;
+    padding: 5%;
 }
 button{
     text-align: center;
@@ -19,12 +26,14 @@ button{
     background-color: var(--second-color);
     font-weight: bolder;
     cursor: pointer;
-    border: 2mm ridge black;
+    border: 3mm Solid var(--second-color);
     font-size: 18px;
+    display: block;
 }
 button:hover{
     background-color: var(--primary-color);
     color: var(--accent-color);
+    border: 3mm solid var(--primary-color)
 }
 /*header*/
 header {
@@ -107,6 +116,7 @@ header {
 }
 .recipes {
     padding: 0.5em;
+    text-align: center;
   }
   .recipe-list {
     display: flex;
@@ -133,6 +143,10 @@ header {
   .recipe-card h2,
   .recipe-card p {
     margin: 0.5em 0;
+  }
+  .recipes h2{
+    font-family: var(--font-marker);
+    font-size: 30px;
   }
 .recipe_name{
     color:#f36a71;
@@ -179,12 +193,33 @@ header {
     font-family: var(--font-body);
     font-size: 18px;
 }
+/*user view*/
+.user_head{
+    display:flex;
+    padding: 2%;
+    padding-left: 100px;
+}
+.user_head img {
+    justify-content: left;
+}
+.user_head p{
+    justify-content: center;
+    padding-top: 80px;
+    padding-left: 30px;
+    font-size: 25px;
+}
 /* Footer */
 #dynamic-footer{
     background-color: var(--primary-color);
 }
 
 /*Mobile Screen*/
-@media screen and (max-width: 500px){
-    
+@media screen and (max-width: 550px){
+    main{
+        display: block;
+    }
+    .user_head, .ing-dir, .category-types{
+        display: block;
+    }
+   
 }
