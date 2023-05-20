@@ -1,3 +1,7 @@
+export function qs(selector, parent = document) {
+  return parent.querySelector(selector);
+}
+
 export function renderWithTemplate(template, parentElement, data, position = "afterbegin", callback) {
     parentElement.insertAdjacentHTML(position, template);
     if (callback) {
@@ -21,3 +25,11 @@ export async function loadHeaderFooter() {
     renderWithTemplate(headerTemplate, header);
     renderWithTemplate(footerTemplate, footer);
   }
+
+export function getParams(param) {
+  const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const recipe = urlParams.get(param);
+return recipe;
+
+}
