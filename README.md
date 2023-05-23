@@ -1,8 +1,8 @@
-# recipe app
+# recipe api app
 
 ## Description
 
-Simple website page for recipes.
+website page for recipes.
 
 ## Prerequisites
 
