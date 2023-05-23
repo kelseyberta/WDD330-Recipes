@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../js/recipeSearch.js" type="module"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="search-grid">
+        <h1>Search Recipes</h1>
+        <div class="search-menu">
+          <div class="cuisine-checkboxes">
+            <h2>Cuisine:</h2>
+            <div class="cuisine">
+              <input type="checkbox" name="Italian" id="italian" /><label
+                for="Italian"
+                >Italian</label
+              >
+              <input type="checkbox" name="American" id="american" /><label
+                for="American"
+                >American</label
+              >
+              <input type="checkbox" name="Mexican" id="mexican" /><label
+                for="Mexican"
+                >Mexican</label
+              >
+              <input type="checkbox" name="Mediterranean" id="mediterranean" /><label
+                for="Mediterranean"
+                >Mediterranean</label
+              >
+              <input type="checkbox" name="Chinese" id="chinese" /><label
+                for="Chinese"
+                >Chinese</label
+              >
+              <input type="checkbox" name="Indian" id="indian" /><label
+                for="Indian"
+                >Indian</label
+              >
+            </div>
+          </div>
+          <div class="ing-include">
+              <h2>Ingredients to Include:</h2>
+              <p>Please enter ingredients you would like to include separated by a comma (,) and no space between</p>
+              <p>e.g. chicken,lemon,flour</p>
+              <input type="text" id="ingredients-input" />
+          </div>
+            <div class="ing-exclude">
+              <h2>Ingredients to Exclude:</h2>
+              <p>
+                Please enter ingredients you would like to exclude separated by a comma (,) and no space between
+              </p>
+              <p>e.g. chicken,lemon,flour</p>
+              <input type="text" id="exclude-ingredients-input" />
+            </div>
+            <div class="button-wrapper">
+          <br /><button
+            id="ingredients-input-button"
+            class="button find-recipes-btn"
+          >
+            Find Recipes
+          </button>
+        </div>
+        </div>
+      </div>
+      <div class="searched-recipe-list"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

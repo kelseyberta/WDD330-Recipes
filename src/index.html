@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe Finder | Home</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <script src="./js/main.js" type="module"></script>
   </head>
   <body>
-    <header id="dynamic-header" class="divider">
-    </header>
-    <main class="divider">
+    <header></header>
+    <main class="mainpg">
       <section class="mission">
         <h1>What's Cooking?</h1>
         <p>Welcome to you digital cookbook. Whatever king of recipe you need, look no further.</p>
@@ -17,41 +13,15 @@
           Select your category and start exploring. Sign in and save your recipes to refer back to later.
         </p>
       </section>
-      <section class="category-types">
-        <a
-          class="category-type"
-          href="./category-list/index.html"
-        >
-          <img
-            src="./public/images/category-dessert.jpg"
-            alt="Image of dessert"
-          />
-          <b>Desserts</b>
-        </a>
-        <a
-          class="category-type"
-          href="./category-list/index.html"
-        >
-          <img
-          src="./public/images/category-appetizer.jpg"
-          alt="Image of appetizer"
-          />
-          <b>Appetizers</b>
-        </a>
-        <a
-          class="category-type"
-          href="./category-list/index.html"
-        >
-          <img
-          src="./public/images/category-entree.jpg"
-          alt="Image of entree"
-          />
-          <b>Entrees</b>
-        </a>
-        
-      </section>
+      <h1>Discover</h1>
+      <div class="button-wrapper">
+      <a href="./views/recipeSearch.html"><button class="disc-button">Click here to start searching</button></a>
+      </div>
+        <div class="main-aside">   
+          <h2>Your random recipe       </h2>     
+        <div class="recipes-main"></div>
+      </div>
     </main>
-    <footer id="dynamic-footer"></footer>
+    <footer></footer>
   </body>
-  <script src="/js/main.js" type="module"></script>
 </html>

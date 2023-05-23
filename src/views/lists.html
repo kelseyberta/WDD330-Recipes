@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="../js/lists.js" type="module"></script>
+  </head>
+  <body>
+    <header></header>
+    <main class="list-main">
+      <h1>Your Saved Recipes</h1>
+      <h2>Lists</h2>
+      <div id="custom-confirm" class="dialog">
+        <p>
+          "DWould you like to delete your list and all recipes contained?
+        </p>
+        <div class="dialog-buttons">
+          <button id="confirm-yes">Yes</button>
+          <button id="confirm-no">No</button>
+        </div>
+      </div>
+      <label for="add-list-name">Create New List: </label>
+      <input type="text" id="add-list-name" />
+      <ul id="lists-nav"></ul>
+      <div class="lists-titles"></div>
+      <div class="lists-list"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -9,8 +9,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
-        cart: resolve(__dirname, "src/list/index.html"),
-        product: resolve(__dirname, "src/recipe-list/index.html"),
+        collections: resolve(__dirname, "src/views/collections.html"),
+        collectionsPage: resolve(__dirname, "src/views/collectionsPage.html"),
+        recipeSearch: resolve(__dirname, "src/views/recipeSearch.html"),
+        recipeListing: resolve(__dirname, "src/views/recipeListing.html"),
       },
     },
   },
