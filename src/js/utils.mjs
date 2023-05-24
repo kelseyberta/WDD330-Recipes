@@ -47,11 +47,11 @@ async function loadTemplate(path) {
 }
 
 export async function loadHeaderFooter() {
-  const headTemplate = await loadTemplate("../partials/head.html");
+  const headTemplate = await loadTemplate("./partials/head.html");
   const headElement = document.querySelector("#dynamic-head");
-  const headerTemplate = await loadTemplate("../partials/header.html");
+  const headerTemplate = await loadTemplate("./partials/header.html");
   const headerElement = document.querySelector("#dynamic-header");
-  const footerTemplate = await loadTemplate("../partials/footer.html");
+  const footerTemplate = await loadTemplate("./partials/footer.html");
   const footerElement = document.querySelector("#dynamic-footer");
 
   renderTemplate(headTemplate, headElement);
