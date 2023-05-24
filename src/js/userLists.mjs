@@ -42,7 +42,7 @@ export default class personalRecipeData {
           let answer = await customConfirm();
           if (answer) {
             const title = btn.dataset.title;
-            removeFromLocalStorage(this.ListsKey, title);
+            removeFromLocalStorage(this.listsKey, title);
             localStorage.removeItem(title);
             location.reload();
           }

@@ -30,7 +30,7 @@ import {
 
   function getDropdown(recipe) {
       let temp = localStorage.getItem('temp');
-      if (temp == "All Saved Recipes") {
+      if (temp == "All Recipes") {
         return `<div class="add-List-Cont"><div class="dropdown-container addList"></div><button class="addList add-btn" data-recipe-id="${recipe.id}">Add List</button><div>`;
       } else {
         return "";
@@ -77,7 +77,7 @@ import {
         });
 
         // add dropdown options for each value in local storage
-        if (this.key == "All Saved Recipes") {
+        if (this.key == "All Recipes") {
         const dropdownContainersNodeList = document.querySelectorAll('.dropdown-container');
         const dropdownContainers = Array.from(dropdownContainersNodeList);
         const valuesTitles = getLocalStorage('listTitles');
@@ -85,7 +85,7 @@ import {
         if (valuesTitles.length > 1) {
           dropdownContainers.forEach((container) => {
           const options = valuesTitles.map((title) => {
-            if (title == "All Saved Recipes") {return};
+            if (title == "All Recipes") {return};
 
             let titleValues = getLocalStorage(title);
             const recipeId = container.nextElementSibling.dataset.recipeId;
@@ -97,12 +97,12 @@ import {
           }).join('');
           container.innerHTML = `<select>${options}</select>`;})}
           const dropdown = document.querySelector('.dropdown-container select');
-          if (dropdown.options.length === 0) {
+          if (dropdown.options.length < 0) {
             document.querySelector('.add-List-Cont').classList.add("hide");
           } 
     }}
   
-    renderListsRecipes(list) {
+    renderListRecipes(list) {
       renderListWithTemplate(listRecipeGenerator, this.listElement, list);
 
       const addbtnsNodeList = document.querySelectorAll(".add-btn");
