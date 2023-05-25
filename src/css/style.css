@@ -42,6 +42,7 @@ img {
   max-width: 100%;
   object-fit: contain;
 }
+
 li {
   list-style: none;
 }
@@ -62,6 +63,11 @@ header div {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
+header div a:hover{
+  font-size: larger;
+  color: white;
+  font-weight: bold;
 }
 .logo {
   line-height: 100px;
@@ -86,10 +92,11 @@ header div {
 input {
   height: 2rem;
   padding-left: 0.25rem;
-  color: var(--primary-color);
+  color: var(--second-color);
   font-family: var(--font-body);
   border-radius: 10px;
   border: 1px solid var(--primary-color);
+  padding: 10px;
 }
 
 /* utility classes */
@@ -154,6 +161,7 @@ input {
 }
 .main-aside h2{
   margin-top: 75px;
+  padding-right: 30px;
 }
 
 .mission {
@@ -162,6 +170,8 @@ input {
 .mission h1{
   font-family: var(--font-marker);
   font-size: 50px;
+  padding: 30px;
+  margin: 10px;
 }
 .mission p{
   font-family: var(--font-body);
@@ -170,13 +180,22 @@ input {
   background-color: var(--second-color);
   position:relative;
 }
+.disc-button:hover{
+  background-color: var(--primary-color);
+  color:var(--accent-color);
+}
 .button-wrapper{
   display: flex;
   justify-content: center;
   padding: 20px;
   font-size: 22px;
 }
-
+.recipes-main li .recipe-card h2{
+text-align: center;
+padding-bottom: 20px;
+}
+.recipe-card img:hover{
+  box-shadow: 0 0 30px var(--second-color);}
 /* RECIPE SEARCH */
 .searched-recipe-list {
   display: flex;
@@ -310,6 +329,7 @@ input {
 
 #add-list-name {
   display: inline-block;
+  color: var(--second-color);
 }
 
 .list-card {
@@ -344,6 +364,8 @@ input {
 
 .lists-list {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 .x-btn{
   width: 30px;
@@ -362,6 +384,7 @@ input {
 }
 .list-main div p{
   text-align: center;
+  padding-bottom: 10px;
 }
 .addList{
   position: relative;
