@@ -14,7 +14,7 @@ function searchedRecipeGenerator(recipe) {
         </a>
         <a href="#" class="save-btn`;
 
-        let ids = getLocalStorage("New Recipes");
+        let ids = getLocalStorage("Just Added Recipes");
         if (ids && ids.includes(recipe.id.toString())) {
           html += ` loved`;
         }

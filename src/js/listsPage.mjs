@@ -30,7 +30,7 @@ import {
 
   function getDropdown(recipe) {
       let temp = localStorage.getItem('temp');
-      if (temp == "New Recipes") {
+      if (temp == "Just Added Recipes") {
         return `<div class="add-List-Cont"><div class="dropdown-container addList"></div><button class="addList add-btn" data-recipe-id="${recipe.id}">Add To List</button><div>`;
       } else {
         return "";
@@ -77,7 +77,7 @@ import {
         });
 
         // add dropdown options for each value in local storage
-        if (this.key == "New Recipes") {
+        if (this.key == "Just Added Recipes") {
         const dropdownContainersNodeList = document.querySelectorAll('.dropdown-container');
         const dropdownContainers = Array.from(dropdownContainersNodeList);
         const valuesTitles = getLocalStorage('listTitles');
@@ -85,7 +85,7 @@ import {
         if (valuesTitles.length > 1) {
           dropdownContainers.forEach((container) => {
           const options = valuesTitles.map((title) => {
-            if (title == "New Recipes") {return};
+            if (title == "Just Added Recipes") {return};
 
             let titleValues = getLocalStorage(title);
             const recipeId = container.nextElementSibling.dataset.recipeId;

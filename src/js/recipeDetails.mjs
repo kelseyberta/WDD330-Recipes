@@ -9,7 +9,7 @@ function singleRecipeGenerator(recipe) {
       <div>
       <a href="#" class="addToListButton`;
 
-        let ids = getLocalStorage("New Recipes");
+        let ids = getLocalStorage("Just Added Recipes");
         if (ids && ids.includes(recipe.id.toString())) {
           html += ` loved`;
         }

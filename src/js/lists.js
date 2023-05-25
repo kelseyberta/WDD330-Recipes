@@ -6,7 +6,7 @@ loadHeaderFooter();
 
 const dataSource = new SpoonacularConnection();
 const element = document.querySelector(".lists-list");
-const key = "New Recipes";
+const key = "Just Added Recipes";
 
 const recipeList = new userListData(dataSource, element, key);
 recipeList.init();

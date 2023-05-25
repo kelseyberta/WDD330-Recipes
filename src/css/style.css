@@ -360,6 +360,9 @@ input {
   right: 70px;
 
 }
+.list-main div p{
+  text-align: center;
+}
 .addList{
   position: relative;
 }

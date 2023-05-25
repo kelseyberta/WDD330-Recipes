@@ -6,14 +6,14 @@ import {
 import { renderListWithTemplate } from "./utils.mjs";
 
 export function addToList(recipeid) {
-  setLocalStorage("New Recipes", recipeid);
+  setLocalStorage("Just Added Recipes", recipeid);
 }
 
 function titleCardGenerator(title) {
   let html = `<div class="list-card">
     <a href="../views/listsPage.html?listTitle=${title}">${title}</a>`;
     
-    (title != "New Recipes") ? html += `<a href="#" class="delete-btn" data-title="${title}"><img src="../images/x-btn.png"></a>` : "";
+    (title != "Just Added Recipes") ? html += `<a href="#" class="delete-btn" data-title="${title}"><img src="../images/x-btn.png"></a>` : "";
 
   html += `</div>`;
   return html;
