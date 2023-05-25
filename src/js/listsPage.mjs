@@ -31,7 +31,7 @@ import {
   function getDropdown(recipe) {
       let temp = localStorage.getItem('temp');
       if (temp == "All Recipes") {
-        return `<div class="add-List-Cont"><div class="dropdown-container addList"></div><button class="addList add-btn" data-recipe-id="${recipe.id}">Add List</button><div>`;
+        return `<div class="add-List-Cont"><div class="dropdown-container addList"></div><button class="addList add-btn" data-recipe-id="${recipe.id}">Add To List</button><div>`;
       } else {
         return "";
       }
@@ -97,7 +97,7 @@ import {
           }).join('');
           container.innerHTML = `<select>${options}</select>`;})}
           const dropdown = document.querySelector('.dropdown-container select');
-          if (dropdown.options.length < 0) {
+          if (dropdown.options.length === 0) {
             document.querySelector('.add-List-Cont').classList.add("hide");
           } 
     }}
@@ -117,9 +117,11 @@ import {
             const recipeId = btn.dataset.recipeId;
             setLocalStorage(selectedValue, recipeId);
             location.reload();
+
     });
   });
 }
     }
+  
   
   }

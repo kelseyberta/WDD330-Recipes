@@ -352,6 +352,17 @@ input {
   right: 10px;
   top: 5px;  
 }
+.add-List-Cont{
+  position:relative;
+  top: 350px;
+  display: flex;
+  width: 100px;
+  right: 70px;
+
+}
+.addList{
+  position: relative;
+}
 
 select,
 button {
