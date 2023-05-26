@@ -97,7 +97,7 @@ import {
           }).join('');
           container.innerHTML = `<select>${options}</select>`;})}
           const dropdown = document.querySelector('.dropdown-container select');
-          if (dropdown.options.length === 0) {
+          if (dropdown.options.length < 1) {
             document.querySelector('.add-List-Cont').classList.add("hide");
           } 
     }}

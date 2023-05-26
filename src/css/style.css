@@ -201,6 +201,9 @@ input {
 .recipe-card img:hover {
   box-shadow: 0 0 30px var(--second-color);
 }
+#listsPageList{
+  justify-content: center;
+}
 /* RECIPE SEARCH */
 .searched-recipe-list {
   display: flex;
@@ -306,13 +309,14 @@ input {
   color: white;
 }
 .horizontal-recipe-card {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  border: 2px solid var(--primary-color);
-  background-color: white;
-  margin: 1rem;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid var(--primary-color);
+    background-color: lightgrey;
+    margin: 1rem 2rem;
+    position: relative;
 }
 
 .horizontal-recipe-card img {
