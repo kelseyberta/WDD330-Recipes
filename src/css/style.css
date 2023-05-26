@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Nunito:wght@700&family=Permanent+Marker&display=swap');
-  :root {
-    --font-body: "Nunito";
-    --font-header: 'Lora';
-    --font-marker: "Permanent Marker";
-    --primary-color: #f36a71;
-    --second-color:#1a6c85;
-    --accent-color:#1c1f28;
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Nunito:wght@700&family=Permanent+Marker&display=swap");
+:root {
+  --font-body: "Nunito";
+  --font-header: "Lora";
+  --font-marker: "Permanent Marker";
+  --primary-color: #f36a71;
+  --second-color: #1a6c85;
+  --accent-color: #1c1f28;
 
   /* sizes */
   --small-font: 0.8em;
   --large-font: 1.2em;
 }
+/*basic css*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -64,11 +65,21 @@ header div {
   align-items: center;
   gap: 2rem;
 }
-header div a:hover{
+header div a:hover {
   font-size: larger;
   color: white;
   font-weight: bold;
 }
+input {
+  height: 2rem;
+  padding-left: 0.25rem;
+  color: var(--second-color);
+  font-family: var(--font-body);
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+}
+/* logo css*/
 .logo {
   line-height: 100px;
   width: 245px;
@@ -89,27 +100,20 @@ header div a:hover{
   justify-content: center;
   flex-direction: row;
 }
-input {
-  height: 2rem;
-  padding-left: 0.25rem;
-  color: var(--second-color);
-  font-family: var(--font-body);
-  border-radius: 10px;
-  border: 1px solid var(--primary-color);
-  padding: 10px;
-}
 
-/* utility classes */
+
+/*dropdown*/
 .hide {
   display: none !important;
 }
+/* alert */
 .alert {
   position: absolute;
   top: 70px;
-  left:500px;
+  left: 500px;
   background-color: var(--accent-color);
   color: white;
-  font:bold;
+  font: bold;
   padding: 2px;
   width: fit-content;
   border-radius: 2px;
@@ -145,11 +149,9 @@ input {
   position: relative;
 }
 
-
-
 /* MAIN PAGE */
 .mainpg {
-  display:block;
+  display: block;
 }
 .mainpg h1 {
   text-align: center;
@@ -159,7 +161,7 @@ input {
   display: flex;
   justify-content: center;
 }
-.main-aside h2{
+.main-aside h2 {
   margin-top: 75px;
   padding-right: 30px;
 }
@@ -167,35 +169,38 @@ input {
 .mission {
   text-align: center;
 }
-.mission h1{
+.mission h1 {
   font-family: var(--font-marker);
   font-size: 50px;
   padding: 30px;
   margin: 10px;
 }
-.mission p{
+.mission p {
   font-family: var(--font-body);
 }
-.disc-button, .create-list-btn{
+.disc-button,
+.create-list-btn {
   background-color: var(--second-color);
-  position:relative;
+  position: relative;
 }
-.disc-button:hover{
+.disc-button:hover,
+.find-recipes-btn:hover {
   background-color: var(--primary-color);
-  color:var(--accent-color);
+  color: var(--accent-color);
 }
-.button-wrapper{
+.button-wrapper {
   display: flex;
   justify-content: center;
   padding: 20px;
   font-size: 22px;
 }
-.recipes-main li .recipe-card h2{
-text-align: center;
-padding-bottom: 20px;
+.recipes-main li .recipe-card h2 {
+  text-align: center;
+  padding-bottom: 20px;
 }
-.recipe-card img:hover{
-  box-shadow: 0 0 30px var(--second-color);}
+.recipe-card img:hover {
+  box-shadow: 0 0 30px var(--second-color);
+}
 /* RECIPE SEARCH */
 .searched-recipe-list {
   display: flex;
@@ -253,7 +258,7 @@ padding-bottom: 20px;
 .cuisine label {
   margin-right: 10px;
 }
-.search-grid h1{
+.search-grid h1 {
   text-align: center;
   font-family: var(--font-marker);
 }
@@ -268,47 +273,46 @@ padding-bottom: 20px;
   text-align: center;
   padding-top: 30px;
 }
-.ing-include{
+.ing-include {
   grid-column: 1/2;
-  grid-row:2/3;
+  grid-row: 2/3;
 }
-.ing-exclude{
+.ing-exclude {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-.searched-recipe-list{
+.searched-recipe-list {
   display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
 }
-.individual-recipe-details{
+.individual-recipe-details {
   display: block;
 }
 
 /* lists css */
-.list-main h1{
+.list-main h1 {
   text-align: center;
 }
-.return-search{
- justify-content: center;
- padding: 20px;
- margin: 3%;
+.return-search {
+  justify-content: center;
+  padding: 20px;
+  margin: 3%;
 }
-.return-search:hover{
+.return-search:hover {
   background-color: var(--accent-color);
-  color:white;
+  color: white;
 }
 .horizontal-recipe-card {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   border: 2px solid var(--primary-color);
-  background-color: rgb(245, 245, 245);
-  margin: 1rem 2rem;
-  position: relative;
+  background-color: white;
+  margin: 1rem;
 }
 
 .horizontal-recipe-card img {
@@ -344,6 +348,12 @@ padding-bottom: 20px;
   position: relative;
   margin: 1rem;
   transition: scale 0.2s ease-in-out;
+  text-align: center;
+}
+.listTitleHeader {
+  font-family: var(--font-marker);
+  font-size: 45px;
+  color: var(--accent-color);
 }
 
 .list-card:hover {
@@ -358,8 +368,8 @@ padding-bottom: 20px;
   position: absolute;
   right: 10px;
   top: 5px;
-  height:20px;
-  width:20px;
+  height: 20px;
+  width: 20px;
 }
 
 .lists-list {
@@ -367,26 +377,25 @@ padding-bottom: 20px;
   flex-flow: row wrap;
   justify-content: center;
 }
-.x-btn{
+.x-btn {
   width: 30px;
   height: 30px;
   position: absolute;
   right: 10px;
-  top: 5px;  
+  top: 5px;
 }
-.add-List-Cont{
-  position:relative;
+.add-List-Cont {
+  position: relative;
   top: 400px;
   display: flex;
   width: 100px;
   right: 70px;
-
 }
-.list-main div p{
+.list-main div p {
   text-align: center;
   padding-bottom: 10px;
 }
-.addList{
+.addList {
   position: relative;
 }
 
@@ -421,7 +430,6 @@ button {
   justify-content: center;
   text-align: center;
 }
-
 
 /* NOT FOUND */
 .not-found div {
@@ -458,11 +466,10 @@ button {
   position: relative;
 }
 
-footer{
+footer {
   background-color: var(--primary-color);
 }
-@media screen and (min-width: 500px) {
-}
+
 
 footer {
   font-size: 18px;
@@ -517,4 +524,12 @@ footer {
 
 .dialog-buttons button:hover {
   background-color: #283149e2;
+}
+@media screen and (max-width: 500px) {
+  .ing-exclude, .ing-include{
+    display: block;
+  }
+  .search-menu{
+    display: block;
+  }
 }
