@@ -409,14 +409,17 @@ select {
   border-radius: 5px;
   bottom: 1.1rem;
 }
-
+.addToListButton{
+  position:relative;
+  padding: 20px 60px;
+  border-radius: 20px;
+}
 button {
   background-color: var(--second-color);
   color: white;
   padding: 0.25rem 0.5rem;
   border: none;
 justify-content: left; 
-position: absolute;
 }
 .dropdown-container.addList{
   position: absolute;
