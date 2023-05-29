@@ -18,7 +18,7 @@ import {
               <p>${recipe.summary}</p>
               <br><br>
               <a class="button" href="../views/recipeListing.html?recipeId=${recipe.id}">View Recipe</a>
-              <a href="#" class="delete-btn" data-recipe-id="${recipe.id}"><img class="x-btn" src="../images/x-btn.png"</a>`;
+              <a href="#" class="delete-btn" data-recipe-id="${recipe.id}"><img class="x-btn" src="../images/x-btn.png"></a>`;
 
               html += getDropdown(recipe);
               

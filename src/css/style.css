@@ -275,6 +275,7 @@ input {
   grid-row: 1/2;
   text-align: center;
   padding-top: 30px;
+  color: var(--primary-color);
 }
 .ing-include {
   grid-column: 1/2;
@@ -388,20 +389,12 @@ input {
   right: 10px;
   top: 5px;
 }
-.add-List-Cont {
-  position: relative;
-  top: 400px;
-  display: flex;
-  width: 100px;
-  right: 70px;
-}
+
 .list-main div p {
   text-align: center;
   padding-bottom: 10px;
 }
-.addList {
-  position: relative;
-}
+
 
 select,
 button {
@@ -422,11 +415,13 @@ button {
   color: white;
   padding: 0.25rem 0.5rem;
   border: none;
-  border-radius: 5px;
-  position: relative;
-  justify-content: left;
+justify-content: left; 
+position: absolute;
 }
-
+.dropdown-container.addList{
+  position: absolute;
+  right: 60px;
+}
 .find-recipes-btn {
   position: relative;
   background-color: var(--second-color);
